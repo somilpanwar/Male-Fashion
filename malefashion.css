@@ -3,6 +3,19 @@
     padding: 0px;
     font-family: Arial, Helvetica, sans-serif;
 }
+body{
+    overflow-x: hidden;
+}
+.sidebox{
+    z-index: 9999;
+    display: none;
+    background-color: green;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
+    height: 50%;
+}
 .blackline{
     padding: 5px;
     color: white;
@@ -28,6 +41,7 @@
 }
 .icon{
     margin-left: 11%;
+    
 }
 .links ul{
     font-weight: 400;
@@ -149,22 +163,28 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     
+    
 }
 
 .card{
-    margin-top: 35px;
-    padding: 5px;
-    height: 300px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    padding: 15px;
+    height: 350px;
     width: 290px;
+   
     
-    gap: 10px;
-    flex-direction: column;
+   
+   
     
 }
 .card img{
     width: 100%;
+    height: 90%;
+
 }
 .card p{
+    
     margin: 0;
 }
 
@@ -226,6 +246,10 @@ color: white;
     flex-direction: column;
     gap: 15px;
     
+    
+}
+.cont2 ul>li>a{
+    text-decoration: none;
 }
 .line{
     margin-left: 12%;
@@ -237,4 +261,47 @@ footer p{
     text-align: center;
     margin-left: -50px;
     color: white;
+}
+
+
+@media (max-width: 575.98px) {
+    body{
+        overflow: hidden;
+    }
+    .sidebox{
+        
+        z-index: 9999;
+        position: fixed;
+        top: 0;
+        margin: 0;
+        padding-top: 80px;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 20%;
+        height: 30%;
+        background-color: green;
+    }
+    .sidebox>.div1>ul{
+
+       display: flex;
+       gap: 20px;
+       margin: 8%;
+    
+    
+    }
+    .sidebox .other{
+        margin-left:12%;
+        
+    }
+    .sidebox>.div2 ul{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+      
+     
+        
+    }
+   
 }
