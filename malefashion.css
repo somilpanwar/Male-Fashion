@@ -5,16 +5,18 @@
 }
 body{
     overflow-x: hidden;
+    width: 100%;
 }
 .sidebox{
-    z-index: 9999;
-    display: none;
+    z-index: 999;
     background-color: green;
-    position: fixed;
-    left: 0px;
-    top: 0px;
-    bottom: 0px;
-    height: 50%;
+  position: fixed;
+  height: 200px;
+  width: 100px;
+  display: block;
+  top: 0px;
+  left: 0px;
+  margin: 0px;
 }
 .blackline{
     padding: 5px;
@@ -266,22 +268,27 @@ footer p{
 
 @media (max-width: 575.98px) {
     body{
-        overflow: hidden;
+       height: max-content;
+      
+
     }
     .sidebox{
-        
-        z-index: 9999;
-        position: fixed;
-        top: 0;
-        margin: 0;
+         /* z-index: 999;
+         position: fixed;
+         top: 0px;
+         left: 0px;
+        margin: 0px;
         padding-top: 80px;
         padding-left: 30px;
         display: flex;
         flex-direction: column;
         gap: 20px;
-        width: 20%;
-        height: 30%;
-        background-color: green;
+        width: max-content;
+        height: max-content;
+        background-color: green; */
+        position: fixed;
+        top: 30px;
+     display: block;
     }
     .sidebox>.div1>ul{
 
